@@ -10,9 +10,9 @@ function App() {
       <Navbar />
       <div className="container">
         <Routes>
-          <Homepage />
-          <Singlepage />
-          <Aboutpage />
+          <Route exact path="/" element={<Homepage />} />
+          <Route path="/about" element={<Aboutpage />} />
+          <Route path="/singleshow/:id" element={<Singlepage />} />
         </Routes>
       </div>
     </Router>
