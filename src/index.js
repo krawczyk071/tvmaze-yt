@@ -5,11 +5,14 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 import ShowsState from "./context/shows/showsState";
+import AlertsState from "./context/alerts/alertsState";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <ShowsState>
-    <App />
+    <AlertsState>
+      <App />
+    </AlertsState>
   </ShowsState>
 );
 
