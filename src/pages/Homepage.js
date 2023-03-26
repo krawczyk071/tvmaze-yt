@@ -1,7 +1,12 @@
 import React from "react";
+import Searchbar from "../components/Searchbar";
 
 const Homepage = () => {
-  return <div className="homepage">This is Homepage</div>;
+  return (
+    <div className="homepage">
+      <Searchbar />
+    </div>
+  );
 };
 
 export default Homepage;
