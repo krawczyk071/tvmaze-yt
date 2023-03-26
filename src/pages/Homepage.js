@@ -2,6 +2,7 @@ import Searchbar from "../components/Searchbar";
 
 import React, { useContext } from "react";
 import ShowsContext from "../context/shows/showsContext";
+import Loader from "../components/Loader";
 import ListItem from "../components/ListItem";
 
 const Homepage = () => {
@@ -11,7 +12,7 @@ const Homepage = () => {
     <div className="homepage">
       <Searchbar />
       {loading ? (
-        <h2>Loading...</h2>
+        <Loader />
       ) : (
         <div className="homepage__list">
           {shows.map((item) => (
